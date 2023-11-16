@@ -5,11 +5,13 @@ export enum CompareResult {
     EQUAL = 0,
     AFTER = 1,
 }
-export interface CV {
+
+export interface ChapterVerse {
     chapter: number;
     verse: number;
 }
-export const cv_compare = (a: CV, b: CV): CompareResult => {
+
+export const chapter_verse_compare = (a: ChapterVerse, b: ChapterVerse): CompareResult => {
     if (a.chapter < b.chapter) {
         return CompareResult.BEFORE;
     } else if (a.chapter > b.chapter) {
@@ -23,9 +25,9 @@ export const cv_compare = (a: CV, b: CV): CompareResult => {
         return CompareResult.EQUAL;
     }
 };
-export const cv_start = (sbc: ScriptureBookChapter) => {
+export const chapter_verse_start = (sbc: ScriptureBookChapter) => {
     return { chapter: sbc.chapter_start, verse: sbc.verse_start };
 };
-export const cv_end = (sbc: ScriptureBookChapter) => {
+export const chapter_verse_end = (sbc: ScriptureBookChapter) => {
     return { chapter: sbc.chapter_end, verse: sbc.verse_end };
 };

@@ -4,7 +4,7 @@ import { build, emptyDir } from "dnt";
 await emptyDir("./npm");
 
 await build({
-    entryPoints: ["./VerseRef.ts"],
+    entryPoints: ["./index.ts"],
     outDir: "./npm",
     shims: {
         // see JS docs for overview and more options
