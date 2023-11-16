@@ -1,0 +1,16 @@
+.*swp
+*.pyc
+*.pyo
+.DS_Store
+__pycache__
+*.egg-info
+.ropeproject
+build/
+dist/
+npm/
+.idea/
+.tox
+.cache
+.vscode/
+node_modules/
+*.tgz

@@ -1,0 +1,14 @@
+{
+	"imports": {
+        "dnt": "https://deno.land/x/dnt@0.38.1/mod.ts"
+	},
+    "lint": {
+        "exclude": ["npm/"]
+    },
+    "test": {
+        "exclude": ["npm/"]
+    },
+    "linfmt": {
+        "exclude": ["npm/"]
+    }
+}
