@@ -6,7 +6,7 @@ import {
     ScriptureBookChapters,
 } from "./VerseRef.ts";
 import { assertEquals, assertObjectMatch } from "./testfuncs.ts";
-import NETBibleBooks from "./TestCatalog.ts";
+import { NETBibleBooks } from "./catalog/NETBible.ts";
 
 const makeAndParseExpectingSuccess = (s: string): ParseResultSuccess => {
     const parser = makeParser(NETBibleBooks);

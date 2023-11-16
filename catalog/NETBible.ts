@@ -1,6 +1,11 @@
-import { BookArray } from "./Types.ts";
+import { BookArray } from "../Types.ts";
 
-const NETBibleBooks: BookArray = [
+// Generated from the exegete.app import of the NET Bible
+// https://netbible.org/
+//
+// Useful as a catalog for non-exegete applications of this library
+
+export const NETBibleBooks: BookArray = [
     {
         division: "FT",
         name: "Genesis",
@@ -1577,5 +1582,3 @@ const NETBibleBooks: BookArray = [
         ],
     },
 ];
-
-export default NETBibleBooks;
